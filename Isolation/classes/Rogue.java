@@ -3,8 +3,8 @@ package Isolation.classes;
 import Isolation.interfaces.*;
 import Isolation.attacks.*;
 
-public class Rogue extends Character {
-    public Mage(String name){
+public class Rogue extends GameCharacter {
+    public Rogue(String name){
         this.name = name;
         this.baseHP += 1;
         this.baseMP -= 3;
@@ -13,8 +13,8 @@ public class Rogue extends Character {
         this.atkM = new Stab();
     }
 
-    public void performAtk(Character c) {
-        System.out.println(name + " " + atkM.atk(c));
+    public void performAtk(GameCharacter c) {
+        System.out.println(name + " " + atkM.attack(c));
     }
 
     public void status() {

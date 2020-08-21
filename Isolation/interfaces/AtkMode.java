@@ -1,5 +1,5 @@
 package Isolation.interfaces;
 
 public interface AtkMode {
-    public String attack(Character c);
+    public String attack(GameCharacter c);
 }

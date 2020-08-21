@@ -3,7 +3,7 @@ package Isolation.classes;
 import Isolation.interfaces.*;
 import Isolation.attacks.*;
 
-public class Mage extends Character {
+public class Mage extends GameCharacter {
     public Mage(String name){
         this.name = name;
         this.baseHP -= 3;
@@ -13,8 +13,8 @@ public class Mage extends Character {
         this.atkM = new Fireball();
     }
 
-    public void performAtk(Character c) {
-        System.out.println(name + " " + atkM.atk(c));
+    public void performAtk(GameCharacter c) {
+        System.out.println(name + " " + atkM.attack(c));
     }
 
     public void status() {
