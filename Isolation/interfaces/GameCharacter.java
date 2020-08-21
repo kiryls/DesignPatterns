@@ -1,6 +1,6 @@
 package Isolation.interfaces;
 
-public abstract class Character {
+public abstract class GameCharacter {
     protected String name;
     protected int baseHP = 10; // base health
     protected int baseSP = 10; // base stamina
@@ -8,7 +8,7 @@ public abstract class Character {
 
     protected AtkMode atkM;
 
-    public abstract void performAtk(Character c);
+    public abstract void performAtk(GameCharacter c);
     public abstract void status();
 
     public String getName() {
