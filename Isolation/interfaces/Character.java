@@ -8,7 +8,7 @@ public abstract class Character {
 
     protected AtkMode atkM;
 
-    public abstract void performAtk();
+    public abstract void performAtk(Character c);
     public abstract void status();
 
     public String getName() {
