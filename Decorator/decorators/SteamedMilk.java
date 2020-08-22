@@ -11,7 +11,7 @@ public class SteamedMilk extends CondimentDecorator {
     }
 
     public String getDescription() {
-        return beverage.getDescription() + " , Steamed milk";
+        return beverage.getDescription() + ", Steamed milk";
     }
 
     public double cost() {
