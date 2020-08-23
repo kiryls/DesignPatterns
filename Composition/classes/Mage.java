@@ -1,7 +1,7 @@
-package Isolation.classes;
+package Composition.classes;
 
-import Isolation.interfaces.*;
-import Isolation.attacks.*;
+import Composition.interfaces.*;
+import Composition.attacks.*;
 
 public class Mage extends GameCharacter {
     public Mage(String name){

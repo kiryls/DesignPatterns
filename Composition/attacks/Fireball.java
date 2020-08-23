@@ -1,6 +1,6 @@
-package Isolation.attacks;
+package Composition.attacks;
 
-import Isolation.interfaces.*;
+import Composition.interfaces.*;
 
 public class Fireball implements AtkMode {
     public String attack(GameCharacter c){

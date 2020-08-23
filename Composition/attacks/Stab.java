@@ -1,6 +1,6 @@
-package Isolation.attacks;
+package Composition.attacks;
 
-import Isolation.interfaces.*;
+import Composition.interfaces.*;
 
 public class Stab implements AtkMode {
     public String attack(GameCharacter c){

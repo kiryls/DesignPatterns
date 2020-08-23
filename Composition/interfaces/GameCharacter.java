@@ -1,4 +1,4 @@
-package Isolation.interfaces;
+package Composition.interfaces;
 
 public abstract class GameCharacter {
     protected String name;

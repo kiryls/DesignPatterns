@@ -1,7 +1,7 @@
-package Isolation;
+package Composition;
 
-import Isolation.classes.*;
-import Isolation.interfaces.GameCharacter;
+import Composition.classes.*;
+import Composition.interfaces.GameCharacter;
 
 public class app {
     public static void main(String[] args) {
