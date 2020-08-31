@@ -1,17 +1,19 @@
 package Factory.products;
 
-import Factory.Pizza;
+import Factory.interfaces.*;
 
 public class ClamPizza extends Pizza {
-    public void prepare() {
+    PizzaIngredientFactory ingredientFactory;
+
+    public ClamPizza(PizzaIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
     }
 
-    public void bake() {
-    }
-
-    public void cut() {
-    }
-
-    public void box() {
+    protected void prepare() {
+        System.out.println("Preparing " + name);
+        dough = ingredientFactory.createDough();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
+        clam = ingredientFactory.createClam();
     }
 }

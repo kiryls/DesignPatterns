@@ -1,17 +1,18 @@
 package Factory.products;
 
-import Factory.Pizza;
+import Factory.interfaces.*;
 
 public class CheesePizza extends Pizza {
-    public void prepare() {
-    }
-    
-    public void bake() {
+    PizzaIngredientFactory ingredientFactory;
+
+    public CheesePizza(PizzaIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
     }
 
-    public void cut() {
-    }
-
-    public void box() {
+    protected void prepare() {
+        System.out.println("Preparing " + name);
+        dough = ingredientFactory.createDough();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
     }
 }
