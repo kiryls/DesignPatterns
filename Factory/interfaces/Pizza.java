@@ -3,14 +3,14 @@ package Factory.interfaces;
 import Factory.ingredients.interfaces.*;
 
 public abstract class Pizza {
-    String name;
+    protected String name;
 
-    Dough dough;
-    Sauce sauce;
-    Veggies veggies[];
-    Cheese cheese;
-    Pepperoni pepperoni;
-    Clams clam;
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Veggies veggies[];
+    protected Cheese cheese;
+    protected Pepperoni pepperoni;
+    protected Clams clam;
 
     abstract void prepare();
 
