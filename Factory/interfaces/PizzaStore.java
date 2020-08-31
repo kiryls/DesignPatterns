@@ -1,4 +1,4 @@
-package Factory;
+package Factory.interfaces;
 
 public abstract class PizzaStore {
 
@@ -15,5 +15,5 @@ public abstract class PizzaStore {
         return pizza;
     }
 
-    public abstract Pizza createPizza(String type);
+    protected abstract Pizza createPizza(String type);
 }
