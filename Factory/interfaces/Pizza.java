@@ -12,25 +12,25 @@ public abstract class Pizza {
     protected Pepperoni pepperoni;
     protected Clams clam;
 
-    abstract void prepare();
+    protected abstract void prepare();
 
-    void bake() {
+    protected void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut() {
+    protected void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
 
-    void box() {
+    protected void box() {
         System.out.println("Place pizza in official PizzaStore box");
     }
 
-    void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
-    String getName() {
+    protected String getName() {
         return name;
     }
 
