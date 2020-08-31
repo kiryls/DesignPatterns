@@ -7,6 +7,6 @@ public interface PizzaIngredientFactory {
     public Sauce createSauce();
     public Cheese createCheese();
     public Veggies[] createVeggies();
-    public Pepperoni creatPepperoni();
+    public Pepperoni createPepperoni();
     public Clams createClam();
 }
